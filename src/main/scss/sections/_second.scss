@@ -1,0 +1,67 @@
+.second {
+  padding: 60px 0;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+
+  &__title {
+    max-width: 450px;
+    margin: 0 auto 20px;
+
+    @include font(bold, 28px, 1.4);
+    letter-spacing: -0.025em;
+
+    color: #e31837;
+
+    @include for-size(desktop) {
+      max-width: 493px;
+      margin: 0 auto 32px;
+      @include font(bold, 36px, 1.4);
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    margin: 0 auto 20px;
+
+    @include font(normal, 16px, 1.4);
+    letter-spacing: -0.025em;
+
+    color: #012169;
+
+    @include for-size(desktop) {
+      max-width: 493px;
+    }
+  }
+
+  &__text--part {
+    @include font(900, 20px, 1.4);
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 20px;
+
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__img-desk {
+    display: none;
+
+    @include for-size(desktop) {
+      display: block;
+    }
+  }
+}
+
+.second .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

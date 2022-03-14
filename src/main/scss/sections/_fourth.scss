@@ -1,0 +1,101 @@
+.fourth {
+  padding: 60px 0;
+
+  background: #bbc1cd;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+
+  &__title {
+    margin: 0 auto 20px;
+
+    @include font(900, 36px, 1.4);
+    text-align: center;
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+
+    color: #012169;
+
+    @include for-size(desktop) {
+      margin: 0 auto 38px;
+    }
+  }
+
+  &__img1 {
+    max-width: 450px;
+    margin: 0 auto 12px;
+
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__img1-desk {
+    display: none;
+
+    @include for-size(desktop) {
+      display: block;
+      margin: 0 auto 24px;
+    }
+  }
+
+  &__img1-title {
+    max-width: 450px;
+    margin: 0 auto 10px;
+
+    @include font(bold, 20px, 1.4);
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    color: #e31837;
+
+    @include for-size(desktop) {
+      max-width: unset;
+      margin: 0 auto 5px;
+      @include font(bold, 36px, 1.4);
+    }
+  }
+
+  &__img1-descr {
+    max-width: 450px;
+    margin: 0 auto 36px;
+
+    @include font(normal, 14px, 1.4);
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    color: #012169;
+
+    @include for-size(desktop) {
+      max-width: unset;
+      margin: 0;
+      @include font(500, 20px, 1.4);
+    }
+  }
+
+  &__img2 {
+    max-width: 450px;
+    margin: 0 auto;
+
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__img2-desk {
+    display: none;
+
+    @include for-size(desktop) {
+      display: block;
+    }
+  }
+}
+
+.fourth .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

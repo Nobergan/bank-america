@@ -1,0 +1,127 @@
+.third {
+  @include for-size(desktop) {
+    display: flex;
+  }
+
+  &__title {
+    max-width: 450px;
+    margin: 0 auto 16px;
+
+    @include font(bold, 28px, 1.4);
+    letter-spacing: -0.025em;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      max-width: 470px;
+      margin: 0 0 30px;
+      @include font(bold, 28px, 1.4);
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    margin: 0 auto 16px;
+
+    @include font(normal, 14px, 1.4);
+    letter-spacing: -0.025em;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      max-width: 470px;
+      margin: 0 0 34px;
+      @include font(bold, 16px, 1.4);
+    }
+  }
+
+  &__text--part {
+    @include font(bold, 18px, 1.2);
+
+    @include for-size(desktop) {
+      @include font(bold, 25px, 1.2);
+    }
+  }
+}
+
+.third__box {
+  padding: 60px 0;
+
+  @include for-size(desktop) {
+    padding: 120px 0 120px 100px;
+  }
+
+  &-one {
+    background-image: url("../../img/third/second-container1-bg-mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-size(desktop) {
+      width: 50%;
+    }
+  }
+
+  &-two {
+    background-image: linear-gradient(
+        rgba(1, 33, 105, 0.8),
+        rgba(1, 33, 105, 0.8)
+      ),
+      url("../../img/third/second-container2-bg-mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-size(desktop) {
+      width: 50%;
+    }
+  }
+
+  &-one .third__btn {
+    max-width: 450px;
+    margin: 0 auto 16px;
+    padding: 10px 70px;
+
+    @include font(bold, 16px, 1.6);
+    text-align: center;
+
+    color: #ffffff;
+    background: #012169;
+    border-radius: 3px;
+
+    @include for-size(desktop) {
+      max-width: 300px;
+      margin: 0;
+    }
+  }
+
+  &-one .third__btn:hover,
+  &-one .third__btn:focus,
+  &-one .third__btn:active {
+    background: #ffffff;
+    color: #012169;
+  }
+
+  &-two .third__btn {
+    max-width: 450px;
+    margin: 0 auto 16px;
+    padding: 10px 70px;
+
+    @include font(bold, 16px, 1.6);
+    text-align: center;
+
+    color: #ffffff;
+    background: #e31837;
+    border-radius: 3px;
+
+    @include for-size(desktop) {
+      max-width: 300px;
+      margin: 0;
+    }
+  }
+
+  &-two .third__btn:hover,
+  &-two .third__btn:focus,
+  &-two .third__btn:active {
+    background: #ffffff;
+    color: #e31837;
+  }
+}

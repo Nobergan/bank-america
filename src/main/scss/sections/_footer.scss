@@ -1,0 +1,62 @@
+.footer {
+  padding: 70px 0 100px;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+
+  &__title {
+    margin: 0 auto 20px;
+
+    @include font(bold, 32px, 1.4);
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    color: #e31837;
+
+    @include for-size(desktop) {
+      @include font(bold, 36px, 1.4);
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    margin: 0 auto 20px;
+
+    @include font(normal, 16px, 1.4);
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    color: #012169;
+
+    @include for-size(desktop) {
+      max-width: 565px;
+      margin: 0 auto 24px;
+      @include font(normal, 20px, 1.4);
+    }
+  }
+
+  &__btn {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px 80px;
+
+    @include font(bold, 16px, 1.6);
+    text-align: center;
+
+    color: #ffffff;
+    background: #e31837;
+    border-radius: 3px;
+
+    @include for-size(desktop) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    background: #012169;
+  }
+}

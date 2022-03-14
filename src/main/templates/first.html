@@ -1,0 +1,47 @@
+<section class="first">
+  <div class="container">
+
+    <div class="first__video-container">
+      <video id="video" autoplay muted controls src="https://wtcprojects.com/video/tinkoff_v5.mp4" loop preload="auto"
+        class="first__video"></video>
+    </div>
+
+    <form method="POST" action="thanks/index.php" class="form" id="form">
+      <h1 class="form__title">Заполните форму <br>ПРЯМО СЕЙЧАС
+      </h1>
+      <div class="input_wrapper">
+        <div>
+          <input name="f_name" placeholder="Ваше имя" />
+        </div>
+        <div>
+          <input name="l_name" placeholder="Ваша фамилия" />
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Ваш e-mail" />
+        </div>
+        <style>
+          .iti__flag-container {
+            z-index: 50;
+          }
+
+          .iti-mobile .iti__country-list {
+            width: 85%;
+          }
+        </style>
+        <input type="tel" name="phone" placeholder="Ваш телефон" autocomplete="off" required />
+        <input type="hidden" name="phone2" class="phone2" autocomplete="off" required />
+        <input type="hidden" name="pixel_id" value="<?php echo $FacebookPixel?>" />
+        <input type="hidden" name="page_lang" value="<?php echo $page_lang?>" />
+        <input type="hidden" name="query" value="<?php echo $QUERY?>" />
+        <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
+        <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
+        <input type="hidden" name="landing" value="BANK-AMERICA" />
+
+        <button class="form__btn" type="submit">
+          Подать заявку
+        </button>
+      </div>
+    </form>
+
+  </div>
+</section>

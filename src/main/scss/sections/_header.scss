@@ -1,0 +1,45 @@
+.header {
+  padding: 14px 0 13px;
+
+  @include for-size(desktop) {
+    padding: 0;
+  }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo1 {
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.header__logo2 {
+  margin-right: -10px;
+  margin-bottom: -35px;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.header__logo1-desk {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+
+.header__logo2-desk {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+    margin-right: -140px;
+  }
+}
